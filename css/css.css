@@ -2,25 +2,30 @@
 
 .nav {
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.2);
     font-size: 0.8em;
-    /* background-image: url(../assets/images/AdobeStock_192182376a.jpg);*/
+    background-image: url(../assets/images/AdobeStock_192182376a.jpg);
     font-weight: bold;
-    opacity: 0.9;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 21%;
+
 }
 
 .nav li {
     display: inline;
+    border: 30px;
+    border-color: red;
 }
 
 
 .nav a {
     display: inline-block;
     padding: 10px;
-    color: white;
+    color: #affffd;
 }
 
 .nav a:hover {
@@ -69,7 +74,7 @@ body {
 #headerDiv {
     background-color: rgba( 0, 0, 0, 0.4);
     border-radius: 3em;
-    width: 40%;
+    width: 30%;
     height: 30%;
     text-align: center;
     position: relative;
@@ -173,13 +178,34 @@ a:visited {
 
 /* Media Queries */
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 1312px) {
+
+    .nav {
+
+        width: 30%;
+    }
+}
+
+@media (max-width: 915px) {
+
+    .nav {
+
+        width: 40%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .nav {
+
+        width: 60%;
+    }
     div div div img {
         width: 10%;
         height: 20%;
     }
     #headerDiv {
-        width: 80%;
+        width: 40%;
         height: 25%;
         border-radius: 2em;
     }
@@ -211,5 +237,32 @@ a:visited {
 
         width: 10%;
 
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .nav {
+
+        width: 95%;
+    }
+
+    #headerDiv {
+        width: 50%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    #headerDiv {
+        width: 70%;
+    }
+}
+
+@media (max-width: 245px) {
+
+    #headerDiv {
+        width: 90%;
     }
 }
